@@ -1,0 +1,71 @@
+.base-w {
+	background: url('../img/base/index_bg1-mohu.jpg') no-repeat;
+	height: 100vh;
+	min-height: 663px;
+	display: flex;
+}
+.login-all {
+	width: 800px;
+  min-width: 600px;
+	height: 500px;
+	background: #ffffff8a;
+	align-self: center;
+	margin: 0 auto;
+	border-radius: 25px;
+}
+.start-all header img{
+	margin-left: 30%;
+	margin-top: 50px;
+}
+header {
+	width: 326px;
+	height: 104px;
+	
+	margin: 0 auto;
+	margin-top: 31px;
+}
+header img {
+	width: 326px;
+	height: 104px;
+}
+.log{
+	width: 80%;
+	height: 60%;
+	margin:5% auto;
+}
+.log label{
+	display: block;
+	margin-left: 20%;
+	margin-top:50px;
+}
+.log span{
+	font-size: 36px;
+	font-family: 'asd';
+	display: inline-block;
+    margin-top: 40px;	
+}
+.log label:nth-child(2){
+    margin-top:0px;	
+}
+.log input{
+   width: 50%;
+    height: 36px;
+    border: none;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-size: 24px;
+    line-height: 36px;
+}
+.log button{
+	width: 30%;
+	height: 45px;
+	font-family: 'asd';
+	line-height: 45px;
+	font-size:30px;
+	border:none;
+	margin-right: 30px;
+	background: none;
+}
+.log button:hover{
+	color:white;
+}

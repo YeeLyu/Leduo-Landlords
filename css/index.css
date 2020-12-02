@@ -1,0 +1,600 @@
+.base-w {
+	background: url('../img/base/index_bg1-mohu.jpg') no-repeat center top;
+	background-size: 100% 100%;
+}
+
+.index-all {
+	width: 1200px;
+	min-width: 1200px;
+	height: 100%;
+	min-height: 620px;
+	margin: 0 auto;
+}
+
+.top-nav {
+	height: 76px;
+	width: 100%;
+	display: flex;
+	background: #c8cdc845;
+}
+
+.top-nav .return {
+	height: 76px;
+	width: 81px;
+	background: url('../img/index/11465e0e-b17a-42cd-8556-1dfa33923cc1.png')no-repeat right;
+	opacity: 1.4;
+}
+
+.return img {
+	margin-top: 10px;
+	height: 71px;
+	width: 61px;
+}
+
+.top-title {
+	flex-grow: 1;
+}
+
+.top-title img {
+	height: 71px;
+	margin-top: 12px;
+  margin-left: 12px;
+}
+
+.top-end {
+	flex-grow: 1;
+}
+
+.top-end .dou {
+	width: 175px;
+	height: 71px;
+	display: inline-block;
+	position: absolute;
+	margin-left: 100px;
+	background: url('../img/index/关卡-精灵图.png');
+	background-position: -1200px -60px;
+}
+
+.top-end .dou span:first-child {
+	width: 40%;
+	height: 90px;
+	display: inline-block;
+	background: url('../img/index/豆子.png') no-repeat center;
+	margin-left: 19px;
+}
+
+.top-end .dou span:nth-child(2) {
+	width: 49%;
+	height: 90px;
+	position: relative;
+	top: -64px;
+	left: 58%;
+	display: inline-block;
+}
+
+.sy {
+	
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	position: relative;
+	left: 337px;
+    top: -15px;
+	background:url('../img/index/quite.png') no-repeat center;
+	background-size: 50px 50px;
+	display: inline-block;
+}
+
+.tip-info {
+	width: 460px;
+	height: 30px;
+	top: 95px;
+	left: 50%;
+	overflow: hidden;
+	transform: translateX(-50%);
+	background-image: linear-gradient(to right, rgba(128, 138, 135, 0), rgba(128, 138, 135, 0.5), rgba(128, 138, 135, 0.5), rgba(128, 138, 135, 0));
+}
+
+.tip-pic {
+	top: 6px;
+	width: 59px;
+	height: 26px;
+	background: url('../img/index/小飞机图标.png') no-repeat;
+}
+
+.tip-txt {
+	top: 9px;
+	left: 63px;
+	font-size: 13px;
+	overflow: hidden;
+	height: 35px;
+	color: orange;
+}
+
+.tip-txt li {
+	height: 35px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.tb{
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	position: relative;
+	left: 325px;
+	background-size: 50px 50px;
+	display: inline-block;
+}
+.tb img{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-left: 10px;
+	border-radius: 50px;
+}
+.tb span{
+	position: relative;
+	display: inline-block;
+	width: 80px;
+	font-size: 14px;
+	height: 10px;
+	text-align: center;
+	top: -5px;	
+}
+.content-left {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 20%;
+	height: 540px;
+}
+.c-right {
+	width: 80%;
+	min-height: 540px;
+	position: relative;
+  /*overflow: hidden;*/
+  left: 250px;
+}
+.content {
+	position: relative;
+	width: 1200px;
+	height: 540px;
+}
+.c-right {
+	position:relative;
+}
+.content-right {
+	position: absolute;
+	width: 80%;
+	height: 540px;
+	min-width: 960px;
+	top: 0px;
+	left: 240px;
+
+	animation: c-right-run .3s linear forwards;
+	
+}
+@keyframes c-right-run {
+	0%{left: 500px;opacity: 0;}
+	50%{left: 350px;opacity: 0.5;}
+	100%{left:0px;opacity: 1;}
+}
+.title {
+	position: relative;
+	top: 110px;
+	width: 180px;
+	height: 100px;
+	background: url('../img/index/关卡-精灵图.png');
+	background-position: -760px -350px;
+	border-bottom: 1px solid white;
+	font-family: 'asd';
+	font-size: 37px;
+	text-align: center;
+	line-height: 100px;
+	cursor: pointer;
+}
+.content {
+	position: relative;
+}
+.active {
+	background: url('../img/index/关卡-精灵图.png') -765px -203px;
+	overflow: hidden;
+}
+.active .little-tubiao {
+	width: 25px;
+	height: 25px;
+	top: 2px;
+	left: -30px;
+	position: absolute;
+	background: url('../img/index/btn-img.png') no-repeat;
+	background-size: 20px 20px;
+}
+
+.little-tubiao:nth-child(1) {
+	animation: right-float 10s infinite;
+}
+
+.little-tubiao:nth-child(2) {
+	animation: right-float 6s infinite;
+}
+
+.little-tubiao:nth-child(3) {
+	animation: right-float 8s infinite;
+}
+
+.little-tubiao:nth-child(4) {
+	animation: right-float 3s infinite;
+}
+
+.little-tubiao:nth-child(5) {
+	animation: right-float 7s infinite;
+}
+
+.little-tubiao:nth-child(6) {
+	animation: right-float 5s infinite;
+}
+
+.little-tubiao:nth-child(7) {
+	animation: right-float 8s infinite;
+}
+
+.little-tubiao:nth-child(8) {
+	animation: right-float 9s infinite;
+}
+
+.little-tubiao:nth-child(9) {
+	animation: right-float 6s infinite;
+}
+
+.little-tubiao:nth-child(10) {
+	animation: right-float 10s infinite;
+}
+
+.little-tubiao:nth-child(11) {
+	animation: right-float 8s infinite;
+}
+
+.little-tubiao:nth-child(12) {
+	animation: right-float 10s infinite;
+}
+
+@keyframes right-float {
+	0% {
+		left: 0px;
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		left: 180px;
+		opacity: 0;
+	}
+}
+
+.little-bg {
+	width: 200px;
+	height:  293px;
+	position: relative;
+	top: 140px;
+	float: left;
+	margin-left: 20px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.little-bg:hover{
+	transform: translateX(-10px) translateY(-10px);
+}
+
+ .little-bg span:nth-child(1){
+	width: 73%;
+	height: 60px;
+	display: inline-block;
+	margin-left: 30px;
+	
+}
+.little-bg1 {
+	background: url('../img/index/little-bg.png')-550px -46px;
+	overflow: hidden;
+}
+.little-pic {
+	width: 20px;
+	height: 15px;
+	bottom: 0;
+	left: 5px;
+	position: absolute;
+}
+
+.little-bg1 .little-pic {
+	background: url('../img/index/绿色-黑桃.png') no-repeat;
+}
+
+.little-bg2 .little-pic {
+	background: url('../img/index/蓝色-红桃.png') no-repeat;
+}
+
+.little-bg3 .little-pic {
+	background: url('../img/index/紫色-梅花.png') no-repeat;
+}
+
+.little-bg4 .little-pic {
+	background: url('../img/index/橙色-方块.png') no-repeat;
+}
+
+.little-pic:nth-child(1) {
+	animation: top-float 10s infinite;
+}
+
+.little-pic:nth-child(2) {
+	animation: top-float 6s infinite;
+}
+
+.little-pic:nth-child(3) {
+	animation: top-float 8s infinite;
+}
+
+.little-pic:nth-child(4) {
+	animation: top-float 3s infinite;
+}
+
+.little-pic:nth-child(5) {
+	animation: top-float 7s infinite;
+}
+
+.little-pic:nth-child(6) {
+	animation: top-float 5s infinite;
+}
+
+.little-pic:nth-child(7) {
+	animation: top-float 8s infinite;
+}
+
+.little-pic:nth-child(8) {
+	animation: top-float 9s infinite;
+}
+
+.little-pic:nth-child(9) {
+	animation: top-float 6s infinite;
+}
+
+.little-pic:nth-child(10) {
+	animation: top-float 10s infinite;
+}
+
+.little-pic:nth-child(11) {
+	animation: top-float 8s infinite;
+}
+
+.little-pic:nth-child(12) {
+	animation: top-float 10s infinite;
+}
+
+@keyframes top-float {
+	0% {
+		bottom: 0px;
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		bottom: 240px;
+		opacity: 0.2;
+	}
+}
+
+.little-bg1 span:nth-child(1){
+	background: url('../img/index/关卡-精灵图.png')-892px -947px;
+}
+.little-bg2 {
+	background: url('../img/index/little-bg.png')-305px -45px;
+	overflow: hidden;
+}
+.little-bg2 span:nth-child(1){
+	background: url('../img/index/关卡-精灵图.png')-900px -689px;
+}
+.little-bg3 {
+	overflow: hidden;
+	background: url('../img/index/little-bg.png')-800px -46px;
+}
+.little-bg3 span:nth-child(1) {
+   background: url('../img/index/关卡-精灵图.png')-752px -687px;
+}
+.little-bg4 {
+	overflow: hidden;
+	background: url('../img/index/little-bg.png')-64px -44px;
+}
+.little-bg4 span:nth-child(1) {
+            background: url('../img/index/关卡-精灵图.png')-746px -949px;
+}
+.base-source {
+	width: 70%;
+	height: 35px;
+	margin-left: 30px;
+	position: relative;
+	top: 149px;
+	
+}
+
+.base-source span:first-child {
+    width: 40%;
+    height: 35px;
+    margin-left: 14px;
+    display: inline-block;
+    background: url('../img/index/关卡-精灵图.png')-721px -165px;
+}
+.base-source span:nth-child(2){
+	width: 42%;
+	height: 30px;
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	font-weight: 500;
+	vertical-align: top;
+	margin-top: 6px;
+}
+.source{
+	width: 70%;
+    height: 31px;
+    float: right;
+    position: relative;
+    top: 156px;
+    text-align: center;
+} 
+.source span:first-child{
+	width: 19%;
+    height: 31px;
+    margin-left: 0;
+    display: inline-block;
+    background: url('../img/index/关卡-精灵图.png') -798px -165px no-repeat;
+}
+.source span:nth-child(2){
+	width: 47%;
+	height: 20px;
+	display: inline-block;
+	margin-top:7px;
+	font-size: 14px;
+	color: white;
+	font-weight: 700;
+	vertical-align: top;	
+}
+.err{
+	margin-left: 4px;
+}
+.speed-start {
+    width: 314px;
+    height: 127px;
+    position: absolute;
+    bottom: 0px;
+    left: 650px;
+    background: url('../img/index/关卡-精灵图.png')-415px -820px;
+    cursor: pointer;
+}
+.speed-start:hover{
+	transform: scale(1.2);
+}
+.speed-start span{
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+	background: url('../img/index/关卡-精灵图.png') -535px -680px;
+	float:right;
+	margin-right: -6px;
+  margin-top: -28px;
+}
+
+.content-right article {
+    width: 80%;   
+    margin:  auto;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 50px;
+    background: #f1e5e5ab;
+    color:#6b6767;
+    font-family: 'asd';
+}
+.content-right article h1{
+	font-size: 35px;
+  margin-left: 35%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+	display: inline-block;
+	color: #feb73f;
+}
+.content-right article p{
+	font-size: 20px;
+	padding: 7px;
+}
+.content-right article button{
+	width: 100px;
+	height: 50px;
+	font-size: 24px;
+	/*float: right;*/
+	margin-left: 80%;
+	padding-bottom: 20px;
+	border: none;
+	background: none ;
+	color: #feb73f;
+}
+.content-right article button:hover{
+	color: white;
+}
+.picture{
+	width: 175px;
+	height: 180px;
+	margin-top: -50px;
+	position: relative;
+	display: inline-block;
+	float: right;
+	
+	z-index: 9999;
+}
+.help{
+	background: url('../img/index/关卡-精灵图.png')-330px -475px;
+}
+.introduce{
+	background: url('../img/index/关卡-精灵图.png')-722px 11px;
+}
+.information{
+	background: url('../img/index/ch-female2.png') no-repeat;
+}
+.content-right article form{
+	text-align: center;
+}
+.content-right article form textarea{
+	line-height: 16px;
+	font-size: 18px;
+}
+.content-right article form button{
+	border:1px solid purple;
+	position: relative;
+	left: -315px;
+	line-height: 50px;
+	border-radius: 20px;
+	color: purple;
+	margin-top: 20px;
+}
+.pa {
+	position:absolute;
+}
+.pr {
+	position: relative;
+}
+
+.tiaozhuan {
+  left: 0px;
+  top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .3);
+}
+.sji {
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 606px;
+  height: 365px;
+  margin: 0 auto;
+  background: url('../img/index/升级.png') no-repeat;
+  background-size: 682px;
+}
+.sjiClose {
+  top: 26px;
+  right: 2px;
+  width: 45px;
+  height: 45px;
+  background: url('../img/index/叉叉.png') no-repeat;
+  background-size: 45px;
+  cursor: pointer;
+}
+.qianw {
+  bottom: 93px;
+  left: 50%;
+  transform: translateX(-33px);
+  width: 130px;
+  height: 37px;
+  background: url('../img/index/前往.png') no-repeat;
+  background-size: 130px;
+  cursor: pointer;
+}

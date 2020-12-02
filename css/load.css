@@ -1,0 +1,108 @@
+.base-w {
+	width: 100vh;
+	height: 100%;
+	min-width: 1200px;
+	position: relative;
+	background:  url('../img/base/entry_bg.jpg');
+	background-size: 100% 100%;
+}
+
+.load-all {
+	width: 100%;
+	min-width: 1200px;
+	height: 100vh;
+	margin: 0 auto;
+	position: relative;
+}
+
+.load-all img {
+	position: absolute;
+	display: block;
+}
+
+.logo-img {
+	width: 200px;
+	height: 60px;
+	top: 5%;
+	left: 3%;
+}
+
+.girl-l-img {
+	width: 146px;
+	height: 139px;
+	left: 24%;
+	bottom: 36%;
+}
+
+.boy-img {
+	width: 201px;
+	height: 275px;
+	left: 7%;
+	bottom: 5%;
+}
+
+.gold-img {
+	width: 38px;
+	height: 31px;
+	left: 27%;
+	bottom: 22%;
+}
+
+.girl-c-img {
+	width: 647px;
+	height: 611px;
+	bottom: 0;
+	left: 34%;
+}
+
+.ballon-img {
+	width: 116px;
+	height: 126px;
+	right: 20%;
+	top: 10%;
+}
+
+.coin-img {
+	width: 151px;
+	height: 122px;
+	bottom: 15%;
+	right: 10%;
+}
+
+.progress-bar-linear {
+	width: 50%;
+	height: 13%;
+	position: absolute;
+	bottom: 5%;
+	left: 27%;
+	text-align: center;
+}
+
+.progress-bar-linear .progress-bar {
+	background-color: #ddd;
+	box-shadow: 0px 0px 8px 14px rgb(128, 112, 138);
+	height: 20px;
+	margin: 0 auto;
+	width: 98%;
+	border-radius: 20px;
+}
+
+.progress-bar-linear .progress-bar>span {
+	display: block;
+	height: 100%;
+	width: 0;
+	border-radius: 20px;
+	background: #F8C018;
+	background-image: linear-gradient(to right, #fd9234, #fe9335, #ff9436, #fe9237, #f9b35d);
+}
+
+.progress-bar-linear .progress-bar-text {
+	width: 100%;
+	height: 50%;
+	line-height: 200%;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	margin: 20px auto;
+	background-image: linear-gradient(to right, rgba(88, 66, 79, 0), rgba(88, 66, 79, 1), rgba(88, 66, 79, 0.8), rgba(88, 66, 79, 0.1));
+}

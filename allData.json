@@ -1,0 +1,27 @@
+[
+   {
+   	"name":"Lakers",
+   	"dou":"65942",
+   	"img":"img/index/lakers.jpg"
+   },
+   {
+   	"name":"游客123445",
+   	"dou":"3000",
+   	"img":"img/index/other.jpg"
+   },
+   {
+   	"name":"kris",
+   	"dou":"26781",
+   	"img":"img/index/kris.jpg"	
+   },
+   {
+   	"name":"koko",
+   	"dou":"87430",
+   	"img":"img/index/10.jpg"	
+   },
+   {
+   	"name":"ko",
+   	"dou":"23460",
+   	"img":"img/index/12.jpg"	
+   }
+]

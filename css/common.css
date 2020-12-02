@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+input {
+	outline: none;
+}
+.base-w {
+	width: 100%;
+	min-width: 1200px;
+	height: 100%;
+	min-height: 663px;
+	margin: 0 auto;
+}
+
+@font-face {
+	font-family:'asd';
+	src: url('asd.ttf');
+}

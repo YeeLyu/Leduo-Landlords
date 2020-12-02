@@ -1,0 +1,186 @@
+.base-w {
+	background: url('../img/base/game_bg.jpg') no-repeat ;
+	background-size: 100% 100%;
+}
+.result-all {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 11;
+	width: 100%;
+	min-width: 1200px;
+	height: 100vh;
+	background-color: rgba(0, 0, 0,.3);
+}
+
+/*弹出框背景*/
+.win-bg,
+.lose-bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 700px;
+	height: 320px;
+	transform: translateX(-50%) translateY(-50%);
+}
+.win-bg {
+	background: url('../img/game/胜利页.png') no-repeat;
+	background-size: 100% 100%;
+}
+.lose-bg {
+	background: url('../img/game/输页.png') no-repeat;
+	background-size: 100% 100%;
+}
+.win-record,
+.lose-record {
+	position: relative;
+	width: 600px;
+	height: 320px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*右上角关闭*/
+.closs{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: -22px;
+  top: -15px;
+  cursor: pointer;
+}
+
+/*恭喜你*/
+.win-sign,
+.lose-sign {
+	position: absolute;
+	width: 300px;
+	height: 75px;
+	top: 0px;
+	left: 33%;
+}
+.win-record .dz {
+	background: url('../img/game/地主胜利.png') no-repeat;
+	background-size: 300px;
+}
+.win-record .nm {
+	background: url('../img/game/农民胜利.png') no-repeat;
+	background-size: 300px;
+}
+.lose-record .dz {
+	background: url('../img/game/地主失败.png') no-repeat;
+	background-size: 300px;
+}
+.lose-record .nm {
+	background: url('../img/game/农民失败.png') no-repeat;
+	background-size: 300px;
+}
+
+.resultTable {
+	position: absolute;
+	top: 85px;
+}
+
+/*表格标题文字*/
+.title-text{
+	width: 600px;
+	height: 50px;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+	margin-top: 30px;
+	color: #ffffff;
+}
+/*赢家赢牌数*/
+.title-nums{
+	display: inline-block;
+	width: 30px;
+	height: 50px;
+	color: orange;
+}
+/*表格*/
+
+tr{
+	width: 600px;
+	height: 32px;
+	
+}
+tr:nth-child(n+1):hover{
+	background: #999999;
+}
+td{
+	width: 150px;
+	height: 45px;
+	font-size: 18px;
+}
+th{
+	color: gainsboro;
+	font-size: 20px;
+}
+/*玩家1字体*/
+.player1{
+	color: #F1C869;
+}
+/*玩家2字体*/
+.player2{
+	color: white;
+}
+/*玩家3字体*/
+.player3{
+	color: #333333;
+}
+/*玩家胜利图标*/
+.win-icon1{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 38%;
+	left: -15px;
+}
+/*玩家之间相隔20%*/
+.win-icon2{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 58%;
+	left: -15px;
+}
+
+.win-share-btn,
+.continue-btn {
+  position: absolute;
+  bottom: 8px;
+  width: 106px;
+  height: 45px;
+  line-height: 43px;
+  font-size: 19px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+/*分享按钮*/
+.win-share-btn {
+	left: 33%;
+	background: url('../img/game/蓝边框.png') no-repeat;
+	background-size: 105px;
+}
+
+/*胜利页继续游戏按钮*/
+.continue-btn {
+	background: url('../img/game/黄边框.png') no-repeat;
+	background-size: 105px;
+}
+.win-bg .continue-btn {
+	left: 60%;
+}
+.lose-bg .continue-btn {
+	left: 40%;
+}
+.dz-icon {
+	position: absolute;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+	background: url('../img/game/地主图标.png') no-repeat;
+}

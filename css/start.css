@@ -1,0 +1,9 @@
+.base-w {
+	background: url('../img/base/game_bg.jpg') no-repeat center top;
+}
+.start-all {
+	width: 1200px;
+	min-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}

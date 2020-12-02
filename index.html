@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>选择页</title>
+		<!--游戏开始选择页面-->
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<!--基础样式导入-->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="allData.json?callback=dataInit"></script>
+
+	</head>
+
+	<body>
+		<section class="base-w">
+			<audio controls="controls" id="music1" hidden>
+				<source src="voice/游戏/bg-music.mp3" />
+			</audio>
+			<div class="index-all">
+				<!--导航栏-->
+				<nav class="top-nav">
+					<div class="return"><img src="img/index/return.png" alt="" /></div>
+					<div class="top-title"><img src="img/index/字体.png" alt=""/></div>
+					<div class="top-end">
+						<div class="dou">
+							<span></span>
+							<span id="douNum"></span>
+						</div>
+						<div class="tb">
+							<img src="" alt="" />
+							<span></span>
+						</div>
+						<div class="sy">
+						</div>
+					</div>
+					<div class="tip-info pa">
+						<div class="tip-pic pa"></div>
+							<ul class="tip-txt pa">
+								<li>恭喜猫猫啪得2000游戏豆</li>
+								<li>@所有玩家 恭喜夏至未至在平民场赢得50000豆子</li>
+								<li>玩家wang签到成功！</li>
+								<li>@所有玩家 恭喜玩家87542在土豪场胜利10场</li>
+								<li>憨憨跑得快玩家获得2000豆子</li>
+								<li>玩家*8*在官甲场所向睥睨</li>
+							</ul>
+					</div>
+				</nav>
+				<section  class="content">
+					<div class="content-left">
+						<div class="title active"> <span>首页</span></div>
+						<div class="title"> <span>游戏帮助</span></div>
+						<div class="title"> <span>游戏介绍</span></div>
+						<div class="title"> <span>信息反馈</span></div>
+					</div>
+					<div class="c-right">
+						<div class="content-right" style="display: block;">
+							<div class="little-bg little-bg1">
+								<span></span>
+								<p class="base-source">
+									<span></span>
+									<span>200</span>
+								</p>
+	
+								<p class="source">
+									<span></span>
+									<span>2k-2w</span>
+								</p>
+							</div>
+							<div class="little-bg little-bg2">
+								<span></span>
+								<p class="base-source">
+									<span></span>
+									<span>600</span>
+								</p>
+	
+								<p class="source">
+									<span></span>
+									<span>1w-20w</span>
+								</p>
+							</div>
+							<div class="little-bg little-bg3">
+								<span></span>
+								<p class="base-source">
+									<span style="margin-left: 20px;"></span>
+									<span>1000</span>
+								</p>
+	
+								<p class="source">
+									<span></span>
+									<span>8w以上</span>
+								</p>
+							</div>
+							<div class="little-bg little-bg4">
+								<span></span>
+								<p class="base-source">
+									<span></span>
+									<span>2000</span>
+								</p>
+	
+								<p class="source">
+									<span></span>
+									<span>30w以上</span>
+								</p>
+							</div>
+							<div class="speed-start">
+								<span></span>
+							</div>
+						</div>
+						<div class="content-right" style="display: none;">
+							<article>
+								<h1>游戏帮助</h1>
+								<span class="picture help"></span>
+								<p><span>发牌：</span>随机发牌；谁是地主谁先出</p>
+								<p><span>出牌：</span>游戏者依次轮流出牌，后一家打出的牌必须比前一家打出的大，如果没有比可以不出；<br />如果其他游戏者都不要，则最后出牌的一方可以出新的牌型；</p>
+								<p><span>牌的大小：</span>本游戏的牌点大到小排列为：2，A，K，Q，J，10，9，8，7，6，5，4，3；<br/> 单张，对，三同张，连队，连三同张，顺子，飞机，炸弹等牌型，直接根据牌点确定大小，炸弹可以要得起其他牌型。
+								</p>
+								<button onclick="dunp()">返回</button>
+							</article>
+						</div>
+						<div class="content-right" style="display: none;">
+							<article>
+								<h1>游戏介绍</h1>
+								<span class="picture introduce"></span>
+								<p>游戏是由三名玩家进行，用一副54张牌。</p>
+								<p>分数说明：</p>
+								<p><span>游戏目的：</span>每个游戏者都需要想方设法将自己手中的牌尽快打出去。谁先打完所有的牌，即为胜方。</p>
+								<p><span>如何赢：</span>先出完自己手中的牌。
+								</p>
+								<p><span>如何记牌</span>赢家可以获得其他两个剩下的牌X倍。败家乙方如果未出牌，扣的分会加倍。<br /> 出炸弹，可以获得房间倍数*10的分数值，其他两个玩家被扣除房间倍数*5的分值。所以有炸弹可以优先出。
+								</p>
+								<button onclick="dunp()">返回</button>
+							</article>
+						</div>
+						<div class="content-right" style="display: none; ">
+							<article>
+								<h1>信息反馈</h1>
+								<span class="picture information"></span>
+	
+								<p>负责人联系方式</p>
+								<p><span>电话</span>13574069842<span>邮箱</span>leduo.163.com</p>
+								<p>相关问题:</p>
+								<form action="#">
+									<textarea name="question" rows="10" cols="67"></textarea>
+									<button type="submit" onclick="junp()">提交</button>
+								</form>
+								<button onclick="dunp()">返回</button>
+							</article>
+						</div>
+					</div>
+				</section>
+			</div>
+      
+      <div class="tiaozhuan pa" style="display: none;">
+      	<div class="sji pa">
+      	  <div class="sjiClose pa"></div>
+      	  <div class="qianw pa"></div>
+      	</div>
+      </div>
+		</section>
+	</body>
+	<script src="js/index.js"></script>
+  <script src="js/noticeUp.js"></script>
+  <script src="js/topFloat.js"></script>
+</html>

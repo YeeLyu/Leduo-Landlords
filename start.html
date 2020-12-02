@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>斗地主</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/popup.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" href="css/result.css" />
+		<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/game.js"></script>
+		<script type="text/javascript" src="./js/fragment.js"></script>
+		<script  src="js/start.js"></script>
+		<!-- <script type="text/javascript" src="js/opening animation.js"></script> -->
+	</head>
+
+	<body class="">
+		<div class="changci">
+			<span class="jd">经典玩法</span>
+			<span class="pingm">平民场</span>
+			<span>底分<span class="di-num">200</span></span>
+		</div>
+		<div class="a1"></div>
+		<div class=" over">
+			<div class=" over_2"><img src="img/game/timg.gif" alt=""></div>
+			<div class="over_3">
+				<ul>
+					<li><input class="result" type="text" value="农民胜"></li>
+					<li>
+						<!--<ul class="multiple">
+							<li>初始 <span>X1</span></li>
+							<li>明牌 <span>X1</span></li>
+							<li>抢地主 <span>X1</span></li>
+							<li>春天 <span>X1</span></li>
+							<li>炸弹 <span>X1</span></li>
+							<li>总倍数 <span>X1</span></li>
+						</ul>-->
+					</li>
+					<ul class="integral">
+						<li>
+							<span>玩家1</span>
+							<span class="add">-100</span>
+
+						</li>
+						<li>
+							<span>玩家2</span>
+
+							<span class="add">-100</span>
+						</li>
+						<li>
+							<span>玩家3</span>
+
+							<span class="add">-100</span>
+						</li>
+					</ul>
+					<li class="count_button">
+						<input id="close" type="button" value="休息一下">
+						<input id="continue" type="button" value="点击继续">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--结束动画结束-->
+		<div class="top">
+			<div class="score" style="background: none;">
+				<ul>
+				</ul>
+			</div>
+			<div class="three_poker"></div>
+		</div>
+		<div class="left">
+			<div class="alarm left_alarm"></div>
+			<!--<span class="name"></span>
+			<div class="player1_portrait"></div>-->
+			<div class="toux-left pr">
+				<div class="avatar pa"><img src="" alt="" id="left-img" /></div>
+				<div class="chat-info pa"></div>
+				<div class="username pa">cherish</div>
+				<div class="user-dou pa">
+					<span class="dou-pic"></span>
+					<span class="dou-num"></span>
+				</div>
+			</div>
+			<div class="player1_poker"></div>
+			<div class="button_container left_button ">
+				<input class="clock call_clock" type="text" type="button">
+				<input class="button land_grab" type="button" value="叫地主">
+				<input class="button not_call" type="button" value="不叫">
+			</div>
+			<span class="tip tip-play1 pa"></span>
+			<div class="play_event left_play_event">
+				<input class="clock play_clock" type="text" type="button">
+				<input type="button" value="出牌" class=" button play" style="display: none;">
+				<input type="button" value="不出" class=" button no_play" style="display: none;">
+				<input type="button" value="提示" class="button hint" style="display: none;">
+			</div>
+
+		</div>
+		<div class="center">
+			<div class="mid_top">
+
+				<ul class="all_poker"></ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="alarm bottom_alarm"></div>
+			<!--<span class="name"></span>
+			<div class="player2_portrait"></div>-->
+			<div class="avatar-3 pa">
+				<div class="avatar-bg pa"></div>
+				<div class="avatar pa"><img src="" alt="" id="bottom-img" /></div>
+				<div class="chat-info pa"></div>
+				<div class="username pa">cherish</div>
+				<div class="user-dou pa">
+					<span class="dou-pic"></span>
+					<span class="dou-num">5782</span>
+				</div>
+
+			</div>
+			<div class="player2_poker"></div>
+
+			<div class="button_container bottom_button">
+				<input class="clock call_clock" type="text" type="button" value="7">
+				<input class="button land_grab" type="button" value="叫地主">
+				<input class="button not_call" type="button" value="不叫">
+			</div>
+			<span class="tip tip-play2 pa"></span>
+			<div class="play_event  bottom_play_event">
+				<input class="clock play_clock" type="text" type="button" value="15">
+				<input type="button" value="出牌" class=" button play">
+				<input type="button" value="不出" class=" button no_play">
+				<input type="button" value="提示" class="button hint">
+				<span class="pass-tip un-get pa" style="display: none;">你没有能接大家的牌</span>
+				<span class="pass-tip unreasonable pa" style="display: none;">你出的牌不符合规则</span>
+			</div>
+		</div>
+		<div class="right">
+			<div class="alarm right_alarm"></div>
+			<!--<span class="name"></span>
+			<div class="player3_portrait"></div>-->
+			<div class="toux-right pa">
+				<div class="avatar pa"><img src="" alt="" id="right-img" /></div>
+				<div class="chat-info pa"></div>
+				<div class="username pa">cherish</div>
+				<div class="user-dou pa">
+					<span class="dou-pic"></span>
+					<span class="dou-num">5782</span>
+				</div>
+			</div>
+			<ul class="player3_poker"></ul>
+
+			<div class="button_container right_button">
+				<input class="clock call_clock" type="text" type="button">
+				<input class="button land_grab" type="button" value="叫地主">
+				<input class="button not_call" type="button" value="不叫">
+			</div>
+			<span class="tip tip-play3 pa"></span>
+			<div class="play_event right_play_event">
+				<input class="clock play_clock" type="text" type="button">
+				<input type="button" value="出牌" class=" button play" style="display: none;">
+				<input type="button" value="不出" class=" button no_play" style="display: none;">
+				<input type="button" value="提示" class="button hint" style="display: none;">
+			</div>
+		</div>
+		<div class="booo"></div>
+		<div class="bos"></div>
+		<div class="bbj"></div>
+		<div class="sz">
+		</div>
+		<div class="show" style="display: none;">
+			<div class="show-img"></div>
+			<div class="show-star"></div>
+		</div>
+		<div class="result-all" style="display: none;">
+				<!--胜利弹出框-->
+				<div class="win-bg" style="display: none;">
+					<div class="win-record">
+						<img class="closs" src="img/game/结果叉叉.png" alt=""/>
+						<div class="win-sign dz" style="display: none;"></div>
+						<div class="win-sign nm" style="display: none;"></div>
+						<!--玩家一赢，胜利图标在玩家一显示-->
+						<table width="600px" cellspacing="0" class="resultTable">
+							<!--表头-->
+							<thead>
+								<tr>
+									<th>昵称</th>
+									<th>底分</th>
+									<th>欢乐豆</th>
+								</tr>
+							</thead>
+							<!--表格主体-->
+							<tbody>
+								<!--玩家1-->
+								<tr class="player1">
+									<!--玩家1昵称-->
+									<td class="player1_name">
+										<span class="dz-icon" style="display: none;"></span>
+										<span class="usernames"></span>
+									</td>
+									<!--玩家1底分-->
+									<td class="player1_grade">200</td>
+									<!--玩家1游戏豆-->
+									<td class="player_beans">4800</td>
+								</tr>
+								<!--玩家2-->
+								<tr class="player2">
+									<!--玩家2昵称-->
+									<td class="player2_name">
+										<span class="dz-icon" style="display: none;"></span>
+										<span class="usernames"></span>
+									</td>
+									<!--玩家2底分-->
+									<td class="player2_grade">200</td>
+									<!--玩家2游戏豆-->
+									<td class="player_beans">4800</td>
+								</tr>
+								<!--玩家3-->
+								<tr class="player3">
+									<!--玩家3昵称-->
+									<td class="player3_name">
+										<span class="dz-icon" style="display: none;"></span>
+										<span class="usernames"></span>
+									</td>
+									<!--玩家3底分-->
+									<td class="player3_grade">200</td>
+									<!--玩家3游戏豆-->
+									<td class="player_beans">4800</td>
+								</tr>
+							</tbody>
+							
+						</table>
+					  <div class="result-btn">
+				      <div class="win-share-btn">分享</div>
+				      <div class="continue-btn">继续游戏</div>
+			      </div>
+					</div>
+				</div>		  
+			  <!--失败弹出框-->
+				<div class="lose-bg" style="display: none;">
+					<div class="lose-record">
+						<img class="closs" src="img/game/结果叉叉.png" alt=""/>
+						<div class="lose-sign dz" ></div>
+						<div class="lose-sign nm" style="display: none;"></div>
+						<table width="600px" cellspacing="0" class="resultTable">
+							<!--表头-->
+							<thead>
+								<tr>
+									<th>昵称</th>
+									<th>底分</th>
+									<th>游戏豆</th>
+								</tr>
+							</thead>
+							<!--表格主体-->
+							<tbody>
+								<!--玩家1-->
+								<tr class="player1">
+									<!--玩家1昵称-->
+									<td class="player1_name">
+										<span class="dz-icon" style="display: none;"></span>
+										<span class="usernames"></span>
+									</td>
+									<!--玩家1积分-->
+									<td class="player1_grade">200</td>
+									<!--玩家1游戏豆-->
+									<td class="player_beans">4800</td>
+								</tr>
+								<!--玩家2-->
+								<tr class="player2">
+									<!--玩家2昵称-->
+									<td class="player2_name">
+										<span class="dz-icon" style="display: none;"></span>
+										<span class="usernames"></span>
+									<!--玩家2积分-->
+									<td class="player2_grade">200</td>
+									<!--玩家2游戏豆-->
+									<td class="player_beans">4800</td>
+								</tr>
+								<!--玩家3-->
+								<tr class="player3">
+									<!--玩家3昵称-->
+									<td class="player3_name">
+										<span class="dz-icon" style="display: none;"></span>
+										<span class="usernames"></span>
+									
+									<!--玩家3积分-->
+									<td class="player3_grade">200</td>
+									<!--玩家3游戏豆-->
+									<td class="player_beans">4800</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="result-btn">
+				      <div class="continue-btn">继续游戏</div>
+		       	</div>
+					</div>
+				</div>
+			</div>
+		<audio id="boom" src="./audio/8923.wav" autoplay="autoplay"></audio>
+		<audio src="audio/bg-music.mp3" autoplay></audio>
+		<audio src="audio/sorry.mp3" id="sorry"></audio>
+		<audio src="audio/woqiang.mp3" id="woqiang"></audio>
+		<audio src="audio/buqiang.mp3" id="buqiang"></audio>
+		<audio src="audio/ibig.mp3" id="ibig"></audio>
+		<audio src="audio/manbig.mp3" id="manbig"></audio>
+		<audio src="audio/manbuyao.mp3" id="manbuyao"></audio>
+
+	</body>
+
+</html>

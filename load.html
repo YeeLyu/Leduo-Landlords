@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>加载页</title>
+
+		<!--游戏加载页面-->
+		<link rel="stylesheet" type="text/css" href="css/load.css" />
+		<!--基础样式导入-->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+	</head>
+
+	<body>
+		<section class="base-w">
+			<div class="load-all">
+				<img src="img/entry/new-logo.png" class="logo-img" alt=""/>
+				<img src="img/entry/ch-female2.png" class="girl-l-img" alt=""/>
+				<img src="img/entry/ch-male1.png" class="boy-img" alt=""/>
+				<img src="img/entry/litter-gold-coin.png" class="gold-img" alt=""/>
+				<img src="img/entry/ch-female1.png" class="girl-c-img" alt=""/>
+				<img src="img/entry/balloon.png" class="ballon-img" alt=""/>
+				<img src="img/entry/gold-coin.png" class="coin-img" alt=""/>
+
+				<!--进度条-->
+				<div class="progress-bar-linear">
+					<div class="progress-bar">
+						<span data-percent="100"></span>
+					</div>
+					<p class="progress-bar-text">游戏玩命奔跑中，一起来跑得快！</p>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script>
+		$(function() {
+			$('.progress-bar>span').each(function() {
+				var $this = $(this);
+				var width = 0;
+				var timer = setInterval(function() {
+					width++;
+					$this.css('width', function() {
+						$this.parent().prev().children("span").html(width + '%');
+						if(width >= parseInt($this.data('percent'))) {
+							clearInterval(timer);
+
+//														下一个要跳转的页面
+							document.location = "login.html";							
+						}
+						return width + '%';
+					});
+				}, 30);
+			});
+		});
+	</script>
+
+</html>
